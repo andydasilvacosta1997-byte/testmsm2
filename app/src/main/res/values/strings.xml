@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MSM Resource Collector</string>
+    <string name="accessibility_description">Helps click recognised resource collection buttons when enabled.</string>
+</resources>
