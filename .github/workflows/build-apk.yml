@@ -1,7 +1,6 @@
-```yaml
 name: Build Android APK
 
-'on':
+on:
   workflow_dispatch:
   push:
     branches:
@@ -26,6 +25,9 @@ jobs:
         with:
           gradle-version: '8.9'
 
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
       - name: Install Android SDK
         run: |
           yes | sdkmanager --licenses
@@ -39,4 +41,3 @@ jobs:
         with:
           name: MSM-Resource-Collector
           path: app/build/outputs/apk/debug/app-debug.apk
-```
